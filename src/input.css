@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Faces */
+@font-face {
+  font-family: 'LamaSansBlack';
+  src: url('./Fonts/LamaSans-Black.otf');
+}
+@font-face {
+  font-family: 'LamaSansBold';
+  src: url('./Fonts/LamaSans-Bold.otf');
+}
+
+@font-face {
+  font-family: 'LamaSansExtraBold';
+  src: url('./Fonts/LamaSans-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: 'LamaSansMedium';
+  src: url('./Fonts/LamaSans-Medium.otf');
+}
+
+
+@font-face {
+  font-family: 'LamaSansRegular';
+  src: url('./Fonts/LamaSans-Regular.otf');
+}
+
+@font-face {
+  font-family: 'LamaSansRegularItalic';
+  src: url('./Fonts/LamaSans-RegularItalic.otf');
+}
+
+@font-face {
+  font-family: 'LamaSansSemiBold';
+  src: url('./Fonts/LamaSans-SemiBold.otf');
+}
+
+/* Classes */
+.LamaSansBlack {
+  font-family: 'LamaSansBlack';
+}
+
+.LamaSansBold {
+  font-family: 'LamaSansBold';
+}
+
+.LamaSansExtraBold {
+  font-family: 'LamaSansExtraBold';
+}
+
+.LamaSansMedium {
+  font-family: 'LamaSansMedium';
+}
+
+.LamaSansRegular {
+  font-family: 'LamaSansRegular';
+}
+
+.LamaSansRegularItalic {
+  font-family: 'LamaSansRegularItalic';
+}
+
+.LamaSansSemiBold {
+  font-family: 'LamaSansSemiBold';
+}
+
+
+/* Other style */
+
+.mainPadding {
+  @apply px-[12px] xs2:px-[36px] sm:px-[75px] xl4:px-[277px];
+}
+
+.mainPadding2 {
+  @apply px-[36px] sm:px-[75px] xl3:px-[150px] xl4:px-[375px];
+}
+
+.FlexCenter {
+  @apply flex justify-center items-center;
+}
+
+.imgSettings {
+  @apply pointer-events-none select-none;
+}
+
+.selectedNav {
+  @apply relative before:absolute before:content-[''] before:bottom-[-5px] before:left-[-20%] before:w-[140%] before:h-[7px] before:rounded-[2px] before:bg-[#E8A328];
+}
+
+.selectedExclusive {
+  @apply relative before:absolute before:content-[''] before:bottom-[-8px] before:left-0 before:w-full before:h-[1px] before:rounded-[2px] before:bg-black;
+}
+
+.GradientLefttoRight,
+.GradientToptoBottom,
+.GradientBottomtoTop {
+  @apply absolute content-[''] top-0 left-0 w-full h-full z-0;
+}
+
+.GradientLefttoRight {
+  @apply bg-gradient-to-r from-secondary to-transparent;
+}
+
+.GradientToptoBottom {
+  @apply bg-gradient-to-b from-secondary to-transparent;
+}
+
+.GradientBottomtoTop {
+  @apply bg-gradient-to-t from-secondary to-transparent;
+}

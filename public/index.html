@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/Logos/Logo.svg">
+  <title>Tradbazaar</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="./FontAwesome/all.min.css">
+</head>
+
+<body>
+  <main class="bg-[#FEFAF4] ">
+    <!-- Headers -->
+    <!-- 1) First Header (yellow card) -->
+    <div class="LamaSansSemiBold max-lg2:hidden mainPadding2 bg-primary py-[14px]">
+      <ul class="flex justify-end items-center uppercase  text-sm">
+        <li class="border-r-black border-r-[1px] px-2">
+          <a href="#">be a seller</a>
+        </li>
+        <li class="border-r-black border-r-[1px] px-2">
+          <a href="#">Compare</a>
+        </li>
+        <li class="border-r-black border-r-[1px] px-2">
+          <span>ENG</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </li>
+        <li class="px-2">
+          <span>USD</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </li>
+      </ul>
+    </div>
+    <!-- 2) Header (logo , search, menu) -->
+    <header class="bg-white max-lg2:hidden mainPadding2 flex justify-between items-center gap-16 py-10">
+      <a href="#">
+        <img class="imgSettings" src="./imgs/Logos/Logo_name.svg" alt="logo">
+      </a>
+      <form class="flex-grow border-[#2E2E2E] border-2 rounded-full overflow-hidden flex justify-between" action="">
+        <input placeholder="Search Product"
+          class="LamaSansRegularItalic border-none outline-none pl-7 flex-grow pr-2 text-[14px]" type="text">
+        <button type="button" class="LamaSansExtraBold text-[16px] bg-secondary rounded-full text-white py-4 px-7">
+          Select a Categories
+          <i class="ml-2 fa-solid fa-angle-down text-primary"></i>
+        </button>
+      </form>
+      <ul class="FlexCenter gap-1 uppercase  text-sm">
+        <li class="bg-[#EBEBEB] FlexCenter size-[48px] rounded-md">
+          <a href="#"><i class="text-lg fa-regular fa-user"></i></a>
+        </li>
+        <li class="bg-[#EBEBEB] FlexCenter size-[48px] rounded-md">
+          <a href="#"><i class="text-lg fa-regular fa-heart"></i></a>
+        </li>
+        <li class="bg-[#EBEBEB] FlexCenter size-[48px] rounded-md">
+          <a href="#"><i class="text-lg fa-solid fa-bag-shopping"></i></a>
+        </li>
+        <li class="bg-[#EBEBEB] FlexCenter size-[48px] rounded-md">
+          <a href="#"><i class="text-lg fa-regular fa-compass"></i></a>
+        </li>
+      </ul>
+    </header>
+    <!-- 3) navbar -->
+    <navbar style="
+        background-image: url(./imgs/Backgrounds/Lines.svg);
+        background-size: 100% contain;
+        " class="max-lg2:hidden mainPadding2 flex gap-12 py-5 -mt-3">
+      <div class="relative cursor-pointer group w-[230px] flex">
+        <div
+          class="w-full flex items-center gap-2 z-[101] bg-primary rounded-full group-hover:rounded-[10px] py-3 px-4">
+          <img class="imgSettings" src="./imgs/SomeFAsvgs/Burger.svg" alt="menu">
+          <span class="LamaSansExtraBold">All Categories</span>
+          <i class="ml-auto fa-solid fa-angle-down"></i>
+        </div>
+        <ul
+          class="LamaSansExtraBold hidden group-hover:flex justify-center items-center flex-col text-xs font-bold bg-white absolute top-10 left-0 w-full z-[100]">
+          <li class="border-b-[#F3F3F3] border-b-[1px] w-[calc(100%-32px)] pt-6 pb-4">
+            <a href="#">Supply Pantry</a>
+          </li>
+          <li class="border-b-[#F3F3F3] border-b-[1px] w-[calc(100%-32px)] py-3">
+            <a href="#">Make & Mend</a>
+          </li>
+          <li class="border-b-[#F3F3F3] border-b-[1px] w-[calc(100%-32px)] py-3">
+            <a href="#">Fine Art</a>
+          </li>
+          <li class="border-b-[#F3F3F3] border-b-[1px] w-[calc(100%-32px)] py-3">
+            <a href="#">Fibers</a>
+          </li>
+          <li class="border-b-[#F3F3F3] border-b-[1px] w-[calc(100%-32px)] py-3">
+            <a href="#">Stationery</a>
+          </li>
+          <li class="border-b-[#F3F3F3] border-b-[1px] w-[calc(100%-32px)] py-3">
+            <a href="#">Home + Vintage</a>
+          </li>
+          <li class="border-b-[#F3F3F3] border-b-[1px] w-[calc(100%-32px)] py-3">
+            <a href="#">Glues</a>
+          </li>
+          <li class="border-b-[#F3F3F3] border-b-[1px] w-[calc(100%-32px)] py-3">
+            <a href="#">Inks & Paints</a>
+          </li>
+          <li class=" w-[calc(100%-32px)] py-3">
+            <a href="#">Craft Essentials</a>
+          </li>
+          <li class="py-2 bg-primary text-white w-full FlexCenter LamaSansExtraBold">
+            <button><span class="text-base">+</span> OTHERS</button>
+          </li>
+        </ul>
+      </div>
+      <ul class="LamaSansExtraBold flex justify-end items-center text-white">
+        <li class="border-r-white border-r-[1px] px-8">
+          <a href="#" class="selectedNav">Home</a>
+        </li>
+        <li class="border-r-white border-r-[1px] px-8">
+          <a href="#">Shop</a>
+        </li>
+        <li class="border-r-white border-r-[1px] px-8">
+          <a href="#">Coupon</a>
+        </li>
+        <li class="border-r-white border-r-[1px] px-8">
+          <a href="#">Blogs</a>
+        </li>
+        <li class=" px-8">
+          <a href="#">Pages</a>
+        </li>
+      </ul>
+    </navbar>
+    <!-- 4) navbar - (small screens) -->
+    <header class="LamaSans bg-primary lg2:hidden mainPadding flex justify-between items-center py-4">
+      <a href="#">
+        <img class="imgSettings" src="./imgs/Logos/Logo_name_black.svg" alt="logo">
+      </a>
+      <div class="flex gap-4">
+        <button>
+          <img class="imgSettings !size-[25px]" src="./imgs/SomeFAsvgs/Search.svg" alt="search">
+        </button>
+        <button>
+          <img class="imgSettings !size-[25px]" src="./imgs/SomeFAsvgs/Bars.svg" alt="menu">
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <!-- 1) Explore -->
+    <section>
+      <div class="relative">
+        <div class="mainPadding bg-contain xl3:bg-[100%_100%] bg-[url('./imgs/Backgrounds/Handcraft.png')]">
+          <div class="relative">
+            <button
+              class="rounded-full bg-[#C7C7C7] size-[34px] md:size-[46px] md2:size-[64px] FlexCenter absolute left-5 sm:left-20 top-1/2 -translate-y-1/2">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button
+              class="rounded-full bg-primary text-white size-[34px] md:size-[46px] md2:size-[64px] FlexCenter absolute right-5 sm:right-20 top-1/2 -translate-y-1/2">
+              <i class="fa-solid fa-arrow-right "></i>
+            </button>
+            <img class="imgSettings min-h-[160px] md2:!h-[480px] w-full object-cover" src="./imgs/others/SliderImg.png"
+              alt="slider img">
+          </div>
+        </div>
+        <img class="imgSettings w-full absolute bottom-[-1px] left-0 z-[2]" src="./imgs/others/Breaks.svg" alt="breaks">
+      </div>
+      <div class="flex items-center mainPadding md:h-[250px]">
+        <button class="max-lg:hidden">
+          <i class="fa-3x fa-solid fa-caret-left"></i>
+        </button>
+        <div class="flex-grow overflow-hidden">
+          <div class="LamaSansSemiBold overflow-hidden w-full
+        flex md:grid grid-flow-col 
+        xl3:auto-cols-[calc(100%/5)]
+        lg:auto-cols-[calc(100%/4)] 
+        ">
+            <div class="flex-grow FlexCenter">
+              <div class="min-w-[90px] md:w-[140px] h-full flex flex-col items-center LamaSans p-3 justify-between">
+                <img class="!min-w-[90px] sm:!min-w-[140px] rounded-full object-cover object-center aspect-square"
+                  src="imgs/others/item.jpg" alt="">
+                <h1 class="pt-5 text-sm sm:text-xl md:text-3xl">All</h1>
+              </div>
+            </div>
+            <div class="flex-grow FlexCenter">
+              <div class="min-w-[90px] md:w-[140px] h-full flex flex-col items-center LamaSans p-3 justify-between">
+                <img class="!min-w-[90px] sm:!min-w-[140px] rounded-full object-cover object-center aspect-square"
+                  src="imgs/others/item.jpg" alt="">
+                <h1 class="pt-5 text-sm sm:text-xl md:text-3xl">Women</h1>
+              </div>
+            </div>
+            <div class="flex-grow FlexCenter">
+              <div class="min-w-[90px] md:w-[140px] h-full flex flex-col items-center LamaSans p-3 justify-between">
+                <img class="!min-w-[90px] sm:!min-w-[140px] rounded-full object-cover object-center aspect-square"
+                  src="imgs/others/item.jpg" alt="">
+                <h1 class="pt-5 text-sm sm:text-xl md:text-3xl">Men</h1>
+              </div>
+            </div>
+            <div class="flex-grow FlexCenter">
+              <div class="min-w-[90px] md:w-[140px] h-full flex flex-col items-center LamaSans p-3 justify-between">
+                <img class="!min-w-[90px] sm:!min-w-[140px] rounded-full object-cover object-center aspect-square"
+                  src="imgs/others/item.jpg" alt="">
+                <h1 class="pt-5 text-sm sm:text-xl md:text-3xl">Kids</h1>
+              </div>
+            </div>
+            <div class="flex-grow FlexCenter">
+              <div class="min-w-[90px] md:w-[140px] h-full flex flex-col items-center LamaSans p-3 justify-between">
+                <img class="!min-w-[90px] sm:!min-w-[140px] rounded-full object-cover object-center aspect-square"
+                  src="imgs/others/item.jpg" alt="">
+                <h1 class="pt-5 text-sm sm:text-xl md:text-3xl">Accessories</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="max-lg:hidden">
+          <i class="fa-3x fa-solid fa-caret-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- 2) Exclusive Products -->
+    <section class="flex flex-col items-center bg-primary py-10 mainPadding">
+      <h1 class="text-center text-xl sm:text-3xl md:text-5xl LamaSansExtraBold mb-5">EXCLUSIVE PRODUCTS</h1>
+      <ul class="flex justify-end items-center gap-2 sm:gap-5 LamaSansExtraBold text-xs md:text-base">
+        <li>
+          <a href="#" class="selectedExclusive">Featured Products</a>
+        </li>
+        <li>
+          <a href="#">Most Popular</a>
+        </li>
+        <li>
+          <a href="#">New Arrivals</a>
+        </li>
+        <li>
+          <a href="#">Best Seller</a>
+        </li>
+      </ul>
+      <div class="py-10 overflow-hidden w-full
+        grid grid-flow-col 
+        xl3:auto-cols-[calc(calc(100%-calc(95px*3))/4)]
+        lg:auto-cols-[calc(calc(100%-calc(95px*2))/3)]
+        gap-8 lg:gap-[95px]
+        ">
+        <div class="min-w-[220px] min-h-[320px] flex flex-col bg-white LamaSansSemiBold p-3">
+          <div style="
+            background-image: url(./imgs/others/item.jpg);
+            background-size: cover;
+            background-position: center;
+            " class="relative flex-grow rounded-[20px] overflow-hidden aspect-square">
+            <button class="FlexCenter bg-white absolute bottom-5 left-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-regular fa-heart"></i>
+            </button>
+            <button class="FlexCenter bg-white absolute bottom-5 right-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <div>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star -ml-1"></i>
+            <i class="text-primary fa-solid fa-star -ml-1"></i>
+            <i class="text-primary fa-solid fa-star -ml-1"></i>
+            <i class="text-primary fa-solid fa-star-half-stroke -ml-1"></i>
+          </div>
+          <h1 class="line-clamp-2 text-[18px]">
+            Franel Loop Yarn 100% Polyester
+          </h1>
+          <p class="text-xs mt-1">77.00 USD</p>
+          <p class="text-xs mt-1 text-primary">Free Delivery</p>
+        </div>
+        <div class="min-w-[220px] min-h-[320px] flex flex-col bg-white LamaSansSemiBold p-3">
+          <div style="
+            background-image: url(./imgs/others/item.jpg);
+            background-size: cover;
+            background-position: center;
+            " class="relative flex-grow rounded-[20px] overflow-hidden aspect-square">
+            <button class="FlexCenter bg-white absolute bottom-5 left-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-regular fa-heart"></i>
+            </button>
+            <button class="FlexCenter bg-white absolute bottom-5 right-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <div>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star -ml-1"></i>
+            <i class="text-primary fa-solid fa-star -ml-1"></i>
+            <i class="text-primary fa-solid fa-star -ml-1"></i>
+            <i class="text-primary fa-solid fa-star-half-stroke -ml-1"></i>
+          </div>
+          <h1 class="line-clamp-2 text-[18px]">
+            Franel Loop Yarn 100% Polyester
+          </h1>
+          <p class="text-xs mt-1">77.00 USD</p>
+          <p class="text-xs mt-1 text-primary">Free Delivery</p>
+        </div>
+        <div class="min-w-[220px] min-h-[320px] flex flex-col bg-white LamaSansSemiBold p-3">
+          <div style="
+            background-image: url(./imgs/others/item.jpg);
+            background-size: cover;
+            background-position: center;
+            " class="relative flex-grow rounded-[20px] overflow-hidden aspect-square">
+            <button class="FlexCenter bg-white absolute bottom-5 left-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-regular fa-heart"></i>
+            </button>
+            <button class="FlexCenter bg-white absolute bottom-5 right-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <div>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star -ml-1"></i>
+            <i class="text-primary fa-solid fa-star -ml-1"></i>
+            <i class="text-primary fa-solid fa-star -ml-1"></i>
+            <i class="text-primary fa-solid fa-star-half-stroke -ml-1"></i>
+          </div>
+          <h1 class="line-clamp-2 text-[18px]">
+            Franel Loop Yarn 100% Polyester
+          </h1>
+          <p class="text-xs mt-1">77.00 USD</p>
+          <p class="text-xs mt-1 text-primary">Free Delivery</p>
+        </div>
+        <div class="min-w-[220px] min-h-[320px] flex flex-col bg-white LamaSansSemiBold p-3">
+          <div style="
+            background-image: url(./imgs/others/item.jpg);
+            background-size: cover;
+            background-position: center;
+            " class="relative flex-grow rounded-[20px] overflow-hidden aspect-square">
+            <button class="FlexCenter bg-white absolute bottom-5 left-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-regular fa-heart"></i>
+            </button>
+            <button class="FlexCenter bg-white absolute bottom-5 right-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <div>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star -ml-1"></i>
+            <i class="text-primary fa-solid fa-star -ml-1"></i>
+            <i class="text-primary fa-solid fa-star -ml-1"></i>
+            <i class="text-primary fa-solid fa-star-half-stroke -ml-1"></i>
+          </div>
+          <h1 class="line-clamp-2 text-[18px]">
+            Franel Loop Yarn 100% Polyester
+          </h1>
+          <p class="text-xs mt-1">77.00 USD</p>
+          <p class="text-xs mt-1 text-primary">Free Delivery</p>
+        </div>
+      </div>
+      <nav class="flex gap-2 max-lg:hidden">
+        <button class="size-[14px] bg-black rounded-full"></button>
+        <button class="size-[14px] bg-white rounded-full"></button>
+        <button class="size-[14px] bg-white rounded-full"></button>
+      </nav>
+    </section>
+    <!-- 3) Check Workshop -->
+    <section style="
+    background-image: url(./imgs/Backgrounds/workshop.png);
+    background-size: cover;
+    background-position: center;
+    " class="mt-[60px] flex justify-end h-[440px]">
+      <div class="lg:w-[75%] w-full h-full FlexCenter flex-col">
+        <h2 class="text-[32px] sm:text-[32px] text-center text-white LamaSansRegular">How to Design</h2>
+        <h1 class="text-[38px] sm:text-[60px] text-center text-primary LamaSansBlack uppercase -mt-3 sm:-mt-5">
+          Memories Cards
+        </h1>
+        <a href="#"
+          class="text-[14px] rounded-full bg-primary shadow-md shadow-black/40 mt-10 py-4 px-10 LamaSansRegular">
+          CHECK WORKSHOP
+        </a>
+      </div>
+    </section>
+    <!-- 4) Best Products -->
+    <section class="mainPadding py-16">
+      <h1 class="w-full text-center LamaSansExtraBold text-[38px] sm:text-[48px] pb-16">BEST PRODUCTS</h1>
+      <div class="grid gap-x-6 gap-y-9
+      grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5
+      ">
+        <div class="min-h-[423px] flex flex-col bg-white LamaSansSemiBold p-3">
+          <div style="
+            background-image: url(./imgs/others/item.jpg);
+            background-size: cover;
+            background-position: center;
+            " class="relative flex-grow rounded-[20px] overflow-hidden aspect-square">
+            <button class="FlexCenter bg-white absolute bottom-5 left-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-regular fa-heart"></i>
+            </button>
+            <button class="FlexCenter bg-white absolute bottom-5 right-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <div>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h1 class="line-clamp-2 text-lg">
+            Franel Loop Yarn 100% Polyester
+          </h1>
+          <p class="text-xs mt-3">77.00 USD</p>
+          <p class="text-xs text-primary mt-3">Free Delivery</p>
+        </div>
+        <div class="min-h-[423px] flex flex-col bg-white LamaSansSemiBold p-3">
+          <div style="
+            background-image: url(./imgs/others/item.jpg);
+            background-size: cover;
+            background-position: center;
+            " class="relative flex-grow rounded-[20px] overflow-hidden aspect-square">
+            <button class="FlexCenter bg-white absolute bottom-5 left-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-regular fa-heart"></i>
+            </button>
+            <button class="FlexCenter bg-white absolute bottom-5 right-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <div>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h1 class="line-clamp-2 text-lg">
+            Franel Loop Yarn 100% Polyester
+          </h1>
+          <p class="text-xs mt-3">77.00 USD</p>
+          <p class="text-xs text-primary mt-3">Free Delivery</p>
+        </div>
+        <div class="min-h-[423px] flex flex-col bg-white LamaSansSemiBold p-3">
+          <div style="
+            background-image: url(./imgs/others/item.jpg);
+            background-size: cover;
+            background-position: center;
+            " class="relative flex-grow rounded-[20px] overflow-hidden aspect-square">
+            <button class="FlexCenter bg-white absolute bottom-5 left-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-regular fa-heart"></i>
+            </button>
+            <button class="FlexCenter bg-white absolute bottom-5 right-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <div>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h1 class="line-clamp-2 text-lg">
+            Franel Loop Yarn 100% Polyester
+          </h1>
+          <p class="text-xs mt-3">77.00 USD</p>
+          <p class="text-xs text-primary mt-3">Free Delivery</p>
+        </div>
+        <div class="min-h-[423px] flex flex-col bg-white LamaSansSemiBold p-3">
+          <div style="
+            background-image: url(./imgs/others/item.jpg);
+            background-size: cover;
+            background-position: center;
+            " class="relative flex-grow rounded-[20px] overflow-hidden aspect-square">
+            <button class="FlexCenter bg-white absolute bottom-5 left-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-regular fa-heart"></i>
+            </button>
+            <button class="FlexCenter bg-white absolute bottom-5 right-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <div>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h1 class="line-clamp-2 text-lg">
+            Franel Loop Yarn 100% Polyester
+          </h1>
+          <p class="text-xs mt-3">77.00 USD</p>
+          <p class="text-xs text-primary mt-3">Free Delivery</p>
+        </div>
+        <div class="min-h-[423px] flex flex-col bg-white LamaSansSemiBold p-3">
+          <div style="
+            background-image: url(./imgs/others/item.jpg);
+            background-size: cover;
+            background-position: center;
+            " class="relative flex-grow rounded-[20px] overflow-hidden aspect-square">
+            <button class="FlexCenter bg-white absolute bottom-5 left-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-regular fa-heart"></i>
+            </button>
+            <button class="FlexCenter bg-white absolute bottom-5 right-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <div>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h1 class="line-clamp-2 text-lg">
+            Franel Loop Yarn 100% Polyester
+          </h1>
+          <p class="text-xs mt-3">77.00 USD</p>
+          <p class="text-xs text-primary mt-3">Free Delivery</p>
+        </div>
+        <div class="min-h-[423px] flex flex-col bg-white LamaSansSemiBold p-3">
+          <div style="
+            background-image: url(./imgs/others/item.jpg);
+            background-size: cover;
+            background-position: center;
+            " class="relative flex-grow rounded-[20px] overflow-hidden aspect-square">
+            <button class="FlexCenter bg-white absolute bottom-5 left-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-regular fa-heart"></i>
+            </button>
+            <button class="FlexCenter bg-white absolute bottom-5 right-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <div>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h1 class="line-clamp-2 text-lg">
+            Franel Loop Yarn 100% Polyester
+          </h1>
+          <p class="text-xs mt-3">77.00 USD</p>
+          <p class="text-xs text-primary mt-3">Free Delivery</p>
+        </div>
+        <div class="min-h-[423px] flex flex-col bg-white LamaSansSemiBold p-3">
+          <div style="
+            background-image: url(./imgs/others/item.jpg);
+            background-size: cover;
+            background-position: center;
+            " class="relative flex-grow rounded-[20px] overflow-hidden aspect-square">
+            <button class="FlexCenter bg-white absolute bottom-5 left-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-regular fa-heart"></i>
+            </button>
+            <button class="FlexCenter bg-white absolute bottom-5 right-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <div>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h1 class="line-clamp-2 text-lg">
+            Franel Loop Yarn 100% Polyester
+          </h1>
+          <p class="text-xs mt-3">77.00 USD</p>
+          <p class="text-xs text-primary mt-3">Free Delivery</p>
+        </div>
+        <div class="min-h-[423px] flex flex-col bg-white LamaSansSemiBold p-3">
+          <div style="
+            background-image: url(./imgs/others/item.jpg);
+            background-size: cover;
+            background-position: center;
+            " class="relative flex-grow rounded-[20px] overflow-hidden aspect-square">
+            <button class="FlexCenter bg-white absolute bottom-5 left-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-regular fa-heart"></i>
+            </button>
+            <button class="FlexCenter bg-white absolute bottom-5 right-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <div>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h1 class="line-clamp-2 text-lg">
+            Franel Loop Yarn 100% Polyester
+          </h1>
+          <p class="text-xs mt-3">77.00 USD</p>
+          <p class="text-xs text-primary mt-3">Free Delivery</p>
+        </div>
+        <div class="min-h-[423px] flex flex-col bg-white LamaSansSemiBold p-3">
+          <div style="
+            background-image: url(./imgs/others/item.jpg);
+            background-size: cover;
+            background-position: center;
+            " class="relative flex-grow rounded-[20px] overflow-hidden aspect-square">
+            <button class="FlexCenter bg-white absolute bottom-5 left-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-regular fa-heart"></i>
+            </button>
+            <button class="FlexCenter bg-white absolute bottom-5 right-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <div>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h1 class="line-clamp-2 text-lg">
+            Franel Loop Yarn 100% Polyester
+          </h1>
+          <p class="text-xs mt-3">77.00 USD</p>
+          <p class="text-xs text-primary mt-3">Free Delivery</p>
+        </div>
+        <div class="min-h-[423px] flex flex-col bg-white LamaSansSemiBold p-3">
+          <div style="
+            background-image: url(./imgs/others/item.jpg);
+            background-size: cover;
+            background-position: center;
+            " class="relative flex-grow rounded-[20px] overflow-hidden aspect-square">
+            <button class="FlexCenter bg-white absolute bottom-5 left-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-regular fa-heart"></i>
+            </button>
+            <button class="FlexCenter bg-white absolute bottom-5 right-5 rounded-[10px] size-[36px]">
+              <i class="text-primary fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <div>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star"></i>
+            <i class="text-primary fa-solid fa-star-half-stroke"></i>
+          </div>
+          <h1 class="line-clamp-2 text-lg">
+            Franel Loop Yarn 100% Polyester
+          </h1>
+          <p class="text-xs mt-3">77.00 USD</p>
+          <p class="text-xs text-primary mt-3">Free Delivery</p>
+        </div>
+      </div>
+    </section>
+    <!-- 5) Handcrafted item sale -->
+    <section style="
+    background-image: url(./imgs/Backgrounds/Handicrafted.png);
+    background-size: cover;
+    background-position: center;
+    " class="mainPadding flex justify-end mt-[60px] h-[440px]">
+      <div class="lg:w-[95%] w-full h-full flex flex-col justify-center">
+        <p class="LamaSansSemiBold text-[18px] text-white">Summer Sale</p>
+        <p class="LamaSansRegular text-[40px] text-white">20 % OFF</p>
+        <h1 class="text-[38px] sm:text-[60px] text-primary LamaSansBlack uppercase -mt-3 sm:-mt-5">
+          Handicrafted item
+        </h1>
+        <a href="#"
+          class="text-[18px] rounded-[10px] bg-white shadow-md shadow-black/40 mt-10 w-fit py-3 px-8 LamaSansSemiBold">
+          Shop Now
+
+          <i class="ml-2 fa-solid fa-angle-down -rotate-90"></i>
+        </a>
+      </div>
+    </section>
+    <!-- 6) Last navigation -->
+    <section class="mainPadding space-y-16 mt-16">
+      <div class="flex gap-16 max-lg:flex-col">
+        <div style="
+          background-image: url(imgs/others/Cups2.png);
+          background-size: cover;
+          background-position: center;" class="flex-grow p-8 rounded-[10px] overflow-hidden min-h-[200px] relative">
+          <div class="GradientLefttoRight"></div>
+          <div class="flex flex-col justify-between h-full gap-10">
+            <div class=" z-[100]">
+              <p class="LamaSansSemiBold text-[18px] text-white">Enjoy with</p>
+              <h1 class="LamaSansExtraBold text-[30px] text-primary">ITEM</h1>
+            </div>
+            <button
+              class="bg-white/20 border-primary/20 border-[1px] w-fit text-white rounded-full px-2 py-[2px] z-[100] mt-auto">
+              Shop Now
+              <i class="-rotate-90 ml-2 fa-solid fa-angle-down text-white bg-primary/20 rounded-full"></i>
+            </button>
+          </div>
+        </div>
+        <div style="
+          background-image: url(imgs/others/Cups2.png);
+          background-size: cover;
+          background-position: center;" class="flex-grow p-8 rounded-[10px] overflow-hidden min-h-[200px] relative">
+          <div class="GradientLefttoRight"></div>
+          <div class="flex flex-col justify-between h-full gap-10">
+            <div class=" z-[100]">
+              <p class="LamaSansSemiBold text-[18px] text-white">Enjoy with</p>
+              <h1 class="LamaSansExtraBold text-[30px] text-primary">ITEM</h1>
+            </div>
+            <button
+              class="bg-white/20 border-primary/20 border-[1px] w-fit text-white rounded-full px-2 py-[2px] z-[100] mt-auto">
+              Shop Now
+              <i class="-rotate-90 ml-2 fa-solid fa-angle-down text-white bg-primary/20 rounded-full"></i>
+            </button>
+          </div>
+        </div>
+        <div style="
+          background-image: url(imgs/others/Cups2.png);
+          background-size: cover;
+          background-position: center;" class="flex-grow p-8 rounded-[10px] overflow-hidden min-h-[200px] relative">
+          <div class="GradientLefttoRight"></div>
+          <div class="flex flex-col justify-between h-full gap-10">
+            <div class=" z-[100]">
+              <p class="LamaSansSemiBold text-[18px] text-white">Enjoy with</p>
+              <h1 class="LamaSansExtraBold text-[30px] text-primary">ITEM</h1>
+            </div>
+            <button
+              class="bg-white/20 border-primary/20 border-[1px] w-fit text-white rounded-full px-2 py-[2px] z-[100] mt-auto">
+              Shop Now
+              <i class="-rotate-90 ml-2 fa-solid fa-angle-down text-white bg-primary/20 rounded-full"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="grid gap-x-16 gap-y-9 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div style="
+        background-image: url(imgs/others/Cups.png);
+        background-size: cover;
+        background-position: center;" class="flex-grow p-8 rounded-[40px] overflow-hidden min-h-[470px] relative">
+          <div class="GradientBottomtoTop"></div>
+          <div class="flex flex-col justify-end h-full gap-5">
+            <div class=" z-[100]">
+              <p class="LamaSansSemiBold text-[18px] text-white">HC Details</p>
+              <h1 class="LamaSansExtraBold text-[30px] text-primary">Hand craft Item</h1>
+            </div>
+            <button
+              class="bg-white/20 border-primary/20 border-[1px] w-fit text-white rounded-full px-2 py-[2px] z-[100]">
+              Shop Now
+              <i class="-rotate-90 ml-2 fa-solid fa-angle-down text-white bg-primary/20 rounded-full"></i>
+            </button>
+          </div>
+        </div>
+        <div style="
+        background-image: url(imgs/others/Cups2.png);
+        background-size: cover;
+        background-position: center;" class="flex-grow p-8 rounded-[40px] overflow-hidden min-h-[470px] relative">
+          <div class="GradientToptoBottom"></div>
+          <div class="flex flex-col justify-start h-full gap-5">
+            <div class=" z-[100]">
+              <p class="LamaSansSemiBold text-[18px] text-white">HC Details</p>
+              <h1 class="LamaSansExtraBold text-[30px] text-primary">Hand craft Item</h1>
+            </div>
+            <button
+              class="bg-white/20 border-primary/20 border-[1px] w-fit text-white rounded-full px-2 py-[2px] z-[100]">
+              Shop Now
+              <i class="-rotate-90 ml-2 fa-solid fa-angle-down text-white bg-primary/20 rounded-full"></i>
+            </button>
+          </div>
+        </div>
+        <div style="
+        background-image: url(imgs/others/Cups.png);
+        background-size: cover;
+        background-position: center;" class="flex-grow p-8 rounded-[40px] overflow-hidden min-h-[470px] relative">
+          <div class="GradientBottomtoTop"></div>
+          <div class="flex flex-col justify-end h-full gap-5">
+            <div class=" z-[100]">
+              <p class="LamaSansSemiBold text-[18px] text-white">HC Details</p>
+              <h1 class="LamaSansExtraBold text-[30px] text-primary">Hand craft Item</h1>
+            </div>
+            <button
+              class="bg-white/20 border-primary/20 border-[1px] w-fit text-white rounded-full px-2 py-[2px] z-[100]">
+              Shop Now
+              <i class="-rotate-90 ml-2 fa-solid fa-angle-down text-white bg-primary/20 rounded-full"></i>
+            </button>
+          </div>
+        </div>
+        <div style="
+        background-image: url(imgs/others/Cups2.png);
+        background-size: cover;
+        background-position: center;" class="flex-grow p-8 rounded-[40px] overflow-hidden min-h-[470px] relative">
+          <div class="GradientToptoBottom"></div>
+          <div class="flex flex-col justify-start h-full gap-5">
+            <div class=" z-[100]">
+              <p class="LamaSansSemiBold text-[18px] text-white">HC Details</p>
+              <h1 class="LamaSansExtraBold text-[30px] text-primary">Hand craft Item</h1>
+            </div>
+            <button
+              class="bg-white/20 border-primary/20 border-[1px] w-fit text-white rounded-full px-2 py-[2px] z-[100]">
+              Shop Now
+              <i class="-rotate-90 ml-2 fa-solid fa-angle-down text-white bg-primary/20 rounded-full"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 7) Newsletters -->
+    <section class="mainPadding flex flex-col justify-between items-center my-[60px] h-[440px] bg-primary py-16">
+      <div class="w-full h-full flex flex-col items-center text-center">
+        <p class="LamaSansBold text-[32px] uppercase">Sign Up For </p>
+        <h1 class="LamaSansExtraBold text-[38px] xs:text-[48px] sm:text-[60px] -mt-3 sm:-mt-5 uppercase">Newsletters</h1>
+        <p class="LamaSansMedium  text-[18px] xs:text-[20px]">Get E-Mail Updates About Our Latest Shop And Special Offers.</p>
+      </div>
+      <form
+        class="relative flex-grow rounded-tl-[10px] rounded-bl-[10px] overflow-hidden flex justify-between w-full sm:w-[512px]"
+        action="">
+        <img class="absolute left-5 top-1/2 -translate-y-1/2" src="imgs/SomeFAsvgs/Mail.svg" alt="">
+        <input placeholder="Your email adreess"
+          class="LamaSansRegular border-none outline-none pl-12 flex-grow pr-4 text-xs" type="text">
+        <button type="submit"
+          class="FlexCenter LamaSansRegular bg-secondary rounded-[10px] text-[15px] text-white/80 py-5 px-6 xs:px-12 -ml-2">
+          Sign Up
+        </button>
+      </form>
+    </section>
+    <!-- 8) Footer -->
+    <footer class="mainPadding2 py-16 bg-secondary min-h-[530px] flex flex-col justify-between gap-10">
+      <div class="flex gap-x-10 gap-y-10 max-lg:flex-col">
+        <div class="flex flex-grow justify-between max-lg:flex-row-reverse gap-5 max-md:flex-col-reverse">
+          <div class="space-y-6 max-lg:flex-grow max-lg:ml-[5vw] max-md:ml-0">
+            <div class="flex gap-3">
+              <div class="FlexCenter bg-primary rounded-full aspect-square size-[64px]">
+                <i class="fa-solid fa-envelope fa-xl"></i>
+              </div>
+              <div class="flex flex-col justify-between py-2">
+                <h2 class="LamaSansExtraBold text-[18px] text-white">Email</h2>
+                <p class="LamaSansRegular text-[#FFD5D5] text-[18px]">help@tradbazaar.com</p>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <div class="FlexCenter bg-primary rounded-full aspect-square size-[64px]">
+                <i class="fa-solid fa-phone fa-xl"></i>
+              </div>
+              <div class="flex flex-col justify-between py-2">
+                <h2 class="LamaSansExtraBold text-[18px] text-white">Phone</h2>
+                <p class="LamaSansRegular text-[#FFD5D5] text-[18px]">+2 01234567890</p>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <div class="FlexCenter bg-primary rounded-full aspect-square min-w-[64px] max-h-[64px]">
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+              </div>
+              <div class="flex flex-col justify-between py-2">
+                <h2 class="LamaSansExtraBold text-[18px] text-white">Address</h2>
+                <p class="LamaSansRegular text-[#FFD5D5] text-[18px]">7A - Dallah Tower - Cairo, Egypt</p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:flex flex-col items-center justify-between lg:flex-grow space-y-8">
+            <img src="imgs/Logos/Logo_name_white.svg" alt="">
+            <p class="LamaSansRegular mt-3 text-[#FFD5D5] text-[18px] max-w-[400px] lg:max-w-[300px] lg:text-center">An
+              e-commerce
+              platform
+              dedicated to
+              selling traditional
+              handicraft products from the Islamic world.</p>
+            <div class="hidden lg:flex gap-2">
+              <div class="FlexCenter bg-primary rounded-full aspect-square size-[50px]">
+                <i class="fa-brands fa-facebook fa-xl"></i>
+              </div>
+              <div class="FlexCenter bg-primary rounded-full aspect-square size-[50px]">
+                <i class="fa-brands fa-x-twitter fa-xl"></i>
+              </div>
+              <div class="FlexCenter bg-primary rounded-full aspect-square size-[50px]">
+                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between max-lg:flex-grow max-md:flex-col-reverse gap-5">
+          <div class="space-y-6 flex flex-col gap-3">
+            <h1 class="LamaSansExtraBold text-[20px] text-white">CUSTOMER SERVICE</h1>
+            <div class="flex justify-between gap-5">
+              <ul class="space-y-4 text-[#FFD5D5] text-[16px] LamaSansRegular">
+                <li class="">
+                  <a href="#">Contact Us</a>
+                </li>
+                <li class="">
+                  <a href="#">Track Your Order</a>
+                </li>
+                <li class="">
+                  <a href="#">Returns Policy</a>
+                </li>
+                <li class="">
+                  <a href="#">Delivery Information</a>
+                </li>
+                <li class="">
+                  <a href="#">Loyalty Program</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 text-[#FFD5D5] text-[16px] LamaSansRegular">
+                <li class="">
+                  <a href="#">Help & FAQ</a>
+                </li>
+                <li class="">
+                  <a href="#">Warranty & Repair</a>
+                </li>
+                <li class="">
+                  <a href="#">My Account</a>
+                </li>
+                <li class="">
+                  <a href="#">Shopping cart</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:hidden flex md:justify-center items-center flex-grow">
+            <div class="flex gap-2">
+              <div class="FlexCenter bg-primary rounded-full aspect-square size-[64px]">
+                <i class="fa-brands fa-facebook fa-xl"></i>
+              </div>
+              <div class="FlexCenter bg-primary rounded-full aspect-square size-[64px]">
+                <i class="fa-brands fa-x-twitter fa-xl"></i>
+              </div>
+              <div class="FlexCenter bg-primary rounded-full aspect-square size-[64px]">
+                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex justify-between items-center max-lg:flex-col-reverse gap-y-5">
+        <h1 class="LamaSansMedium text-[#A4A4A4] text-[16px] text-center">© copyright 2024 by AlBaraka Forum Team</h1>
+        <img src="imgs/others/Payments.png" alt="">
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
